@@ -12,6 +12,12 @@ Then agents, harness, etc that might be running in the cluster or in client side
 
 It is an operator, created using kubebuilder, that allows you to easily create k8s resources to run models.
 
+It is still in beta version with limited capabilities:
+- Only runs ollama;
+- Supports affinity, tolerations and hpa;
+- Github Actions for CI are running end to end tests, deploying models and checking that those are accesible;
+- Still does not have tested metrics to decide how to setup hpa
+
 ### k8s-llm-hosting
 
 It is not an actual application, but sets of installation to run models. 
